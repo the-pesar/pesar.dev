@@ -1,5 +1,5 @@
 body {
-  background-color: #171717;
+  background-color: #d34c65;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@ p {
 
 a {
   color: #fff;
-  background: #2e2e2e;
+  background: #DB6E82;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  background: #454545;
+  background: #ef92a3;
 }
 
 a span {
