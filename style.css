@@ -3,28 +3,25 @@ body {
   text-align: center;
 }
 
-div {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  width: 300px;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+img {
+  border-radius: 50%;
+  width: 200px;
+  border: 5px solid #db6e82;
+  margin-top: 30px;
+  transform: rotate(-10deg);
 }
 
 p {
   color: #fff;
-  font-weight: 800;
-  font-size: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: Monospace;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 a {
   color: #fff;
-  background: #DB6E82;
+  background: #db6e82;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -63,7 +60,7 @@ a span {
   -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s (0.68, -0.55, 0.265, 1.55);
 }
 
 a span:before {
