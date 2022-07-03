@@ -1,5 +1,7 @@
+/* #d34c65 #db6e82 */
+
 body {
-  background-color: #d34c65;
+  background-color: #414a4c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +14,7 @@ body {
 img {
   border-radius: 50%;
   width: 200px;
-  border: 7.5px solid #db6e82;
+  border: 7.5px solid rgba(255, 255, 255, 0.2);
   margin-top: 70px;
   transform: rotate(-10deg);
 }
@@ -27,13 +29,13 @@ p.title {
   font-family: monospace;
   font-size: 18px;
   font-weight: bold;
-  background-color: #db6e82;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 div.tags {
   text-align: center;
   width: 90%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 div.tags > span {
@@ -46,12 +48,12 @@ div.tags > span {
   font-family: monospace;
   font-size: 15px;
   font-weight: bold;
-  background-color: #db6e82;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 a {
   color: #fff;
-  background: #db6e82;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -70,45 +72,7 @@ a {
 }
 
 a:hover {
-  background: #ef92a3;
-}
-
-a span {
-  color: #666;
-  position: absolute;
-  font-family: sans-serif;
-  bottom: 0;
-  left: -20px;
-  right: -25px;
-  padding: 5px 7px;
-  z-index: -1;
-  font-size: 14px;
-  border-radius: 2px;
-  background: #fff;
-  visibility: hidden;
-  opacity: 0;
-  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 0.5s (0.68, -0.55, 0.265, 1.55);
-}
-
-a span:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  position: absolute;
-  bottom: -5px;
-  left: 40px;
-}
-
-a:hover span {
-  bottom: 65px;
-  visibility: visible;
-  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 svg {
@@ -136,6 +100,15 @@ svg {
 .instagram-icon {
   margin-top: 12.5px;
   margin-left: 10px;
+}
+
+.codepen-icon {
+  margin: 10px;
+}
+
+.telegram-icon {
+  margin-top: 10px;
+  margin-left: 8px;
 }
 
 @media screen and (min-width: 700px) {
