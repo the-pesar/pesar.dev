@@ -16,7 +16,7 @@ img {
   width: 200px;
   border: 7.5px solid rgba(255, 255, 255, 0.2);
   margin-top: 70px;
-  transform: rotate(-10deg);
+  /* transform: rotate(-10deg); */
 }
 
 p.title {
