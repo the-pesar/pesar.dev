@@ -1,57 +1,65 @@
 /* #d34c65 #db6e82 */
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: #414a4c;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  width: 700px;
 }
 
-img {
+section.biography {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+section.biography > img {
   border-radius: 50%;
   width: 200px;
   border: 7.5px solid rgba(255, 255, 255, 0.2);
-  margin-top: 70px;
-  /* transform: rotate(-10deg); */
 }
 
-p.title {
+section.biography > .job-title {
+  width: fit-content;
   padding: 4px 7px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   border-radius: 3px;
   color: #fff;
-  font-family: monospace;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-div.tags {
+section.skills {
   text-align: center;
   width: 90%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-div.tags > span {
+section.skills > span {
   display: inline-block;
   padding: 3px 7px;
   text-align: center;
-  margin: 3px 2px;
+  margin: 4px 2px;
   border-radius: 3px;
   color: #fff;
-  font-family: monospace;
   font-size: 15px;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-a {
+section.socials > a {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
@@ -71,11 +79,12 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
-a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+section.socials > a:hover {
+  transform: scale(1.15) translateY(-10px);
+  background-color: rgba(255, 255, 255, .4);
 }
 
-svg {
+section.socials > a > svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -88,8 +97,8 @@ svg {
 
 .twitter-icon {
   width: 25px;
-  margin-top: 12.5px;
-  margin-left: 12.5px;
+  margin-top: 10px;
+  margin-left: 11.5px;
 }
 
 .LinkedIn-icon {
