@@ -1,5 +1,3 @@
-/* #d34c65 #db6e82 */
-
 body {
   display: flex;
   justify-content: center;
@@ -42,8 +40,8 @@ section.biography > .job-title {
 }
 
 section.skills {
-  text-align: center;
   width: 90%;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -59,6 +57,10 @@ section.skills > span {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+section.socials {
+  display: flex;
+}
+
 section.socials > a {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -66,62 +68,22 @@ section.socials > a {
   text-align: center;
   text-decoration: none;
   font-family: fontawesome;
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 38px;
-  padding-top: 12px;
-  margin: 0 2px;
+  margin: 0 4px;
+  transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s;
   -webkit-font-smoothing: antialiased;
 }
 
 section.socials > a:hover {
   transform: scale(1.15) translateY(-10px);
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-section.socials > a > svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-}
-
-.github-icon {
-  margin: 10px;
-}
-
-.twitter-icon {
-  width: 25px;
-  margin-top: 10px;
-  margin-left: 11.5px;
-}
-
-.LinkedIn-icon {
-  margin-top: 12px;
-  margin-left: 10px;
-}
-
-.instagram-icon {
-  margin-top: 12.5px;
-  margin-left: 10px;
-}
-
-.codepen-icon {
-  margin: 10px;
-}
-
-.telegram-icon {
-  margin-top: 10px;
-  margin-left: 8px;
-}
-
-@media screen and (min-width: 700px) {
-  .tags {
-    width: 30% !important;
-  }
+section.socials > a > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
